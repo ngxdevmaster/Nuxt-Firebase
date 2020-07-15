@@ -1,0 +1,33 @@
+{
+  "name": "functions",
+  "scripts": {
+    "lint": "tslint --project tsconfig.json",
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "sudo firebase deploy --only functions",
+    "logs": "sudo firebase functions:log"
+  },
+  "engines": {
+    "node": "10"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@google-cloud/storage": "^4.5.0",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0",
+    "fs-extra": "^8.1.0",
+    "sharp": "^0.25.4",
+    "smartcrop": "^2.0.3",
+    "smartcrop-sharp": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^8.1.0",
+    "@types/sharp": "^0.24.0",
+    "firebase-functions-test": "^0.1.6",
+    "tslint": "^6.1.0",
+    "typescript": "^3.2.2"
+  },
+  "private": true
+}

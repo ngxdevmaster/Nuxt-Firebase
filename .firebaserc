@@ -1,0 +1,26 @@
+{
+  "projects": {
+    "prod": "expresswebsite-d9381",
+    "beta": "express-fleet-sales-beta"
+  },
+  "targets": {
+    "express-fleet-sales-beta": {
+      "hosting": {
+        "prod": [
+          "prod-efs-dashboard"
+        ],
+        "beta": [
+          "beta-efs-dashboard"
+        ]
+      },
+      "functions": {
+        "prod": [
+          "prod-efs-dashboard"
+        ],
+        "beta": [
+          "beta-efs-dashboard"
+        ]
+      }
+    }
+  }
+}

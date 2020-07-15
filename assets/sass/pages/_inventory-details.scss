@@ -1,0 +1,25 @@
+.page-inventory-details {
+  fieldset {
+    legend {
+      font-weight: 700;
+    }
+
+    .form-group {
+      label {
+        font-size: 13px;
+        font-weight: 600;
+        letter-spacing: 0;
+      }
+
+      &.required {
+        label:after {
+          color: $black;
+        }
+      }
+    }
+  }
+
+  .btn-theme-main--primary {
+    width: 150px;
+  }
+}
